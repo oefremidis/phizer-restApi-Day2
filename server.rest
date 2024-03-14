@@ -1,0 +1,55 @@
+###
+GET http://localhost:3000/api/songs
+
+
+###
+GET http://localhost:3000/api/songs/3
+
+
+###
+GET http://localhost:3000/api/songs/30
+
+
+###
+POST http://localhost:3000/api/songs
+Content-Type: application/json
+
+{ 
+    "id": "4", 
+    "title": "Nothing Else Matters", 
+    "artist": "Metallica", 
+    "rating": "9"
+}
+
+
+###
+PUT http://localhost:3000/api/songs/4
+Content-Type: application/json
+
+{ 
+    "id": "4", 
+    "title": "Nothing Else Matters", 
+    "artist": "Metallica", 
+    "rating": "7"
+}
+
+###
+PATCH http://localhost:3000/api/songs/4
+Content-Type: application/json
+
+{ 
+    "rating": "3"
+}
+
+
+###
+DELETE  http://localhost:3000/api/songs/2
+
+
+###
+GET http://localhost:3000/
+Accept: application/json
+
+
+
+
